@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Contact Info{% endblock %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/contact.css' %}">
+<main>
+    <section class="contact-info">
+        <h1>Contact Us</h1>
+        <p>We'd love to hear from you! Here’s how you can reach us:</p>
+        
+        <div class="contact-methods">
+            <div class="contact-method">
+                <h2>Our Address</h2>
+                <p>Kinari Bazar,<br>Chandni Chowk,<br>Delhi, 110006,<br>India</p>
+            </div>
+            
+            <div class="contact-method">
+                <h2>Phone</h2>
+                <p>+91 8447984231 <br>+91 9990057014</p>
+
+            </div>
+            
+            <div class="contact-method">
+                <h2>Email</h2>
+                <p><a href="mailto:info@woodenbeads.com">manishcollection156@gmail.com</a></p>
+            </div>
+            <div class="contact-method">
+                <h2>Social Media</h2>
+                <p>
+                    <a href="https://facebook.com/yourpage" target="_blank">Facebook</a> |
+                    <a href="https://twitter.com/yourprofile" target="_blank">Twitter</a> |
+                    <a href="https://instagram.com/yourprofile" target="_blank">Instagram</a>
+                </p>
+            </div>
+            
+        </div>
+    </section>
+</main>
+
+{% endblock %}

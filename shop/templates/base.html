@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+    <title>{% block title %}Shop{% endblock %}</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="/">MANISH COLLECTION</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">SHOP</a>
+                </li>
+                <li class="nav-item">
+                    <a  class="nav-link" href="{% url 'about_us' %}">About Us</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="{% url 'contact_info' %}">Contact Info</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        {% block content %}
+        <!-- Content will be injected here -->
+        {% endblock %}
+    </div>
+
+    <footer style="background: linear-gradient(45deg, #333, #555); color: white; padding: 20px 0; text-align: center; margin-top: 50px;">
+        <div style="display: flex; justify-content: space-around; align-items: center; flex-wrap: wrap;">
+            <div style="flex: 1; min-width: 200px;">
+                <h4 style="margin-bottom: 10px;">Follow Us</h4>
+                <a href="https://facebook.com" target="_blank" style="color: white; margin-right: 15px;">
+                    <img src="{% static 'images/facebook-icon.avif' %}" alt="Facebook" style="width: 24px; vertical-align: middle;">
+                </a>
+                <a href="https://twitter.com" target="_blank" style="color: white; margin-right: 15px;">
+                    <img src="{% static 'images/twitter-icon.png' %}" alt="Twitter" style="width: 24px; vertical-align: middle;">
+                </a>
+                <a href="https://instagram.com" target="_blank" style="color: white;">
+                    <img src="{% static 'images/instagram-icon.jpeg' %}" alt="Instagram" style="width: 24px; vertical-align: middle;">
+                </a>
+            </div>
+            <div style="flex: 1; min-width: 200px;">
+                <h4 style="margin-bottom: 10px;">Quick Links</h4>
+                <p style="margin: 5px 0;"><a href="{% url 'about_us' %}" style="color: white; text-decoration: none;">About Us</a></p>
+                <p style="margin: 5px 0;"><a href="{% url 'contact_info' %}" style="color: white; text-decoration: none;">Contact Info</a></p>
+            </div>
+            <div style="flex: 1; min-width: 200px;">
+                <h4 style="margin-bottom: 10px;">Contact Us</h4>
+                <p style="margin: 5px 0;">Email: manishcollection156@gmail.com</p>
+                <p style="margin: 5px 0;">Phone: 8447984231, 9990057014</p>
+            </div>
+        </div>
+        <p style="margin-top: 20px;">&copy; 2024 My Shop. All rights reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

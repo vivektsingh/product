@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}About Us{% endblock %}
+
+{% block content %}
+
+<link rel="stylesheet" href="{% static 'css/styles.css' %}">
+<main class="about-us">
+    <section class="intro">
+        <h1>Know More About Our Company</h1>
+        <p>Welcome to MANISH COLLECTION ! We are dedicated to providing exceptional products to our customers.</p>
+        <br>
+
+        <h1>Who we Are ? </h1>
+        <p>We are your premier source for high-quality wooden beads. Established in 2005,
+             we specialize in crafting exquisite wooden beads that enhance the beauty and
+             functionality of a wide range of products. Our commitment to quality craftsmanship 
+             and sustainable practices sets us apart in the industry.
+
+At MANISH COLLECTION, we blend traditional techniques with modern innovations to produce wooden beads that are 
+not only aesthetically pleasing but also durable and eco-friendly. Whether you're a jewelry maker, a fashion designer, 
+or a craft enthusiast, our diverse collection of beads offers endless possibilities for creativity and design.</p><br>
+<h1>Our main office </h1>
+<p> Our office is situated in the bustling and vibrant area of Chandni Chowk, a historic
+     marketplace renowned for its rich heritage and lively atmosphere.</p><br>
+    <h1>How We Takecare</h1>
+    <p>Our approach to client care centers on understanding individual needs through feedback and personalization while
+         ensuring the highest product quality with rigorous control and innovation. We offer exceptional service with prompt
+          responses and a friendly, knowledgeable staff. Building strong relationships through personalized touches, regular updates,
+           and reliable ordering and delivery processes is key. We address issues swiftly and follow up to ensure satisfaction, provide 
+           value-added services like customization and educational resources, and foster a positive reputation through testimonials 
+           and social media engagement. Transparency in pricing and marketing, along with a commitment to continuous improvement 
+           based on client feedback and industry standards, ensures lasting client trust and satisfaction.</p>
+
+    </section>
+
+
+    <section class="team">
+        <h2>Meet Our Team</h2>
+        <div class="team-member">
+            <img src="{% static 'images/photo.png' %}" alt="Team Member 1">
+            <div class="team-info">
+                <h3>Lalit Choudhary</h3>
+                <p>Business Executive </p>
+                <p>Lalit Choudhary has over 6 years of experience in the industry.</p>
+            </div>
+        </div>
+        <div class="team-member">
+            <img src="{% static 'images/photo.png' %}" alt="Team Member 2">
+            <div class="team-info">
+                <h3>Vivek Singh</h3>
+                <p>Marketing Director</p>
+                <p>Vivek Singh is an expert in marketing strategies and ensures our brand reaches its full potential.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="mission">
+        <h2>Our Mission</h2>
+        <p>Our mission is to deliver exceptional value to our customers by offering high-quality products and outstanding service. We strive to innovate and improve continuously to meet the evolving needs of our clients.</p>
+    </section>
+</main>
+
+
+
+
+
+
+{% endblock %}
